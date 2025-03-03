@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="greybackground.mp4" type="video/mp4">
+    </video>
+
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="gm logo.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Find me online</a></li>
+                    <li><a href="#portfolio">My Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WELCOME to My Portfolio.</p>
+                <h1>Hi, I'm <span>Gadupudi Mokshagna</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A highly motivated and enthusiastic recent graduate in CSE (AI & ML), eager to apply my skills in my work. Passionate about learning and contributing to innovative projects.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Certifications">
+                        <ul>
+                            <li><span>NPTEL</span><br>The Joy of Computing with Python (Elite)</li>
+                            <li><span>Salesforce</span><br>Salesforce Certified AI Associate</li>
+                            <li><span>CISCO Networking Academy</span><br>Python Essentials</li>
+                            <li><span>IBM Skill Build</span><br>Artificial Intelligence Fundamentals</li>
+                            <li><span>Google Cloud</span><br>Google Cloud Computing Foundations</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2026</span><br>B.Tech in CSE (AI & ML) - Pragati Engineering College, Kakinada</li>
+                            <li><span>2022</span><br>Intermediate - Sri Sairam Junior College, Ongole</li>
+                            <li><span>2020</span><br>10th Board - Montessori High School, Ongole</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Find Me Online -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Find Me Online</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fab fa-linkedin"></i>
+                    <h2>LinkedIn</h2>
+                    <p>Connect with me on LinkedIn.</p>
+                    <a href="https://www.linkedin.com/in/mokshagna-gadupudi/" target="_blank">Click here</a>
+                </div>
+                <div>
+                    <i class="fab fa-github"></i>
+                    <h2>GitHub</h2>
+                    <p>Check out my projects.</p>
+                    <a href="https://github.com/mokshagna2004" target="_blank">Click here</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>LeetCode</h2>
+                    <p>See my coding challenges.</p>
+                    <a href="https://leetcode.com/u/mokshagna04/" target="_blank">Click here</a>
+                </div>
+                <div>
+                    <i class="fab fa-hackerrank"></i>
+                    <h2>HackerRank</h2>
+                    <p>Practice coding with me.</p>
+                    <a href="https://www.hackerrank.com/profile/22A31A4270" target="_blank">Click here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Skills -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div class="skill">Python</div>
+                <div class="skill">Java script</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Pandas</div>
+                <div class="skill">NumPy</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i> mokshagnagd04@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 7386912156</p>
+                    <a href="https://drive.google.com/file/d/1T16YnkGWOO5C33QEP61NGSMXlYOX9E7o/view?usp=drivesdk" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/mokshagnagd04@gmail.com" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        
+                        <!-- Hidden Fields -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_autoresponse" value="Thank you for contacting me!">
+                        
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <p>Thank you for visiting my portfolio!</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mokshagna-gadupudi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/mokshagna2004" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://leetcode.com/u/mokshagna04/" target="_blank"><i class="fas fa-code"></i></a>
+            <a href="https://www.hackerrank.com/profile/22A31A4270" target="_blank"><i class="fab fa-hackerrank"></i></a>
+        </div>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script>
+        function opentab(tabname) {
+            document.querySelectorAll(".tab-links").forEach(link => link.classList.remove("active-link"));
+            document.querySelectorAll(".tab-contents").forEach(content => content.classList.remove("active-tab"));
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        function openmenu() {
+            document.getElementById("sidemenu").style.right = "0";
+        }
+
+        function closemenu() {
+            document.getElementById("sidemenu").style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
